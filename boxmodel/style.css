@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    font-size: arial;
+    background-color: #dedede;
+}
+/***************************************** Partie Entete *****************************************/
+#entete{
+    background-color: red;
+    height: 170px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#entete > h1{
+    font-family: Arial;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    position: relative; 
+    top: 50px;
+}
+#panier{
+    background-color: blue;
+    font-family: Arial;
+    font-size: 16px;
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    float: right; /* aligne l'element tout a droite */
+    position: relative;
+    top: -125px;
+}
+#panier:hover{
+    cursor: pointer;
+}
+#idItem{
+    color: red;
+    font-size: 18px;
+}
+/***************************************** Partie Contenu Item *****************************************/
+#zoneContenuItem{
+    background-color: #dedede;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 170px;
+}
+.item{
+    font-size: 16px;
+    font-family: Arial;
+    text-align: center;
+    color: white;
+    width: 20%;
+    margin-left: 4%;
+    padding-top: 30px;
+    display: inline-block;
+}
+.ajouter{
+    background-color: red;
+    width: 50%;
+    height: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+.ajouter:hover{
+    cursor: pointer;
+}
+/***************************************** Partie Contenu Facture *****************************************/
+#zoneContenuFacture{
+    background-color: #dedede;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 170px;
+    padding-top: 50px; /*Ajout d'espace en haut de la zoneContenuFacture */
+    display: none; /* cacher la zone contenu Facture au lancement de la page*/
+}
