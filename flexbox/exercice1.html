@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
+	<!-- START head -->
 	<head>
 		<meta charset="UTF-8" />
 		<title>Exercice 1</title>
+		<!-- Link to CSS -->
+		<link rel="stylesheet" type="text/css" href="exercice1.css">
 	</head>
+	<!-- END head -->
+	
+	<!-- START body -->
 	<body>
+		<!-- START entete -->
 		<div id="entete">
 			<h1>Zone d'entete </h1>
 			<div id="panier" onclick="afficherFacture()"> 
 				Nbre item : <span id="idItem">0</span> 
 			</div>
 		</div>
+		<!-- END entete -->
+
+		<!-- START zoneContenuItem -->
 		<div id="zoneContenuItem">
 			<div class="item">
 				<img class="imageItem" src="portable1.jpg" />
@@ -85,16 +95,32 @@
 				<div class="ajouter" onclick="javascript:ajouterItem('MSI Portatif de jeu Leo', '1', '2099.95');">Ajouter</div>
 			</div>
 		</div>
+		<!-- END zoneContenuItem -->
+
+		<!-- START zoneContenuFacture -->
 		<div id="zoneContenuFacture">
+			<!-- START table -->
 			<table border="1" width="50%" align="center">
+				<!-- START table header -->
 				<thead>
+					<!-- table header row 1 col 1 -->
 					<th>Description</th>
+					<!-- table header row 1 col 2 -->
 					<th>Quantite</th>
+					<!-- table header row 1 col 3 -->
 					<th>Prix unitaire</th>					
 				</thead>
+				<!-- END table header -->
 				<tbody id="corpsTableau">
 				</tbody>
 			</table>
+			<!-- END table -->
 		</div>
+		<!-- END zoneContenuFacture -->
+
+	<!-- Link to my own JS -->
+    <script src="exercice1.js"></script>
+
 	</body>
+	<!-- END body -->
 </html>
