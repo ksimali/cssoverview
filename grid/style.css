@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    font-size: arial;
+    background-color: #dedede;
+}
+/***************************************** Partie Entete *****************************************/
+#entete{
+    background-color: red;
+    height: 170px;
+    width: 100%;
+}
