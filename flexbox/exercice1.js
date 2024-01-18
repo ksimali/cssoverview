@@ -1,16 +1,10 @@
 // declaration fonction ajouterItem
 function ajouterItem(produit, quantite, prix) {
 
-    // declaration de la variable nouvelleLigne et
-    // affectation du string "<tr>" a la variable nouvelleLigne
-    var nouvelleLigne = "<tr>";
-    // ajout du string "<tr>", de la variable/parametre produit et du string "</tr>" a la variable nouvelleLigne
-    nouvelleLigne += "<td>" + produit + "</td>";
-    // ajout du string "<tr>", de la variable/parametre quantite et du string "</tr>" a la variable nouvelleLigne
-    nouvelleLigne += "<td>" + quantite + "</td>";
-    // ajout du string "<tr>", de la variable/parametre prix et du string "</tr>" a la variable nouvelleLigne
-    nouvelleLigne += "<td>" + prix + "</td>";
-    // affectation du string "</tr>" a nouvelleLigne
+    var nouvelleLigne = "<tr>"; // permet de creer une nouvelle ligne dans le tableau dans la zoneContenuFacture
+    nouvelleLigne += "<td>" + produit + "</td>"; // permet de creer une cellule avec le nom du produit
+    nouvelleLigne += "<td>" + quantite + "</td>"; // permet de creer une cellule avec la quantite du produit
+    nouvelleLigne += "<td>" + prix + "</td>"; // permet de creer une cellule avec le prix du produit
     nouvelleLigne += "</tr>";
 
     // declaration de la variable ancienContenu et
@@ -33,16 +27,16 @@ function ajouterItem(produit, quantite, prix) {
 function afficherFacture () {
     // si les items sont affichés
     if (document.getElementById("zoneContenuFacture").style.display == "none") {
-        // cacher les items
+        // cacher la zone qui contient les items
         document.getElementById("zoneContenuItem").style.display = "none";
-        // afficher la facture
+        // afficher la zone qui contient la facture
         document.getElementById("zoneContenuFacture").style.display = "flex";
     }
     else {
-        // permet de cacher la zone qui contient les items
-        document.getElementById("zoneContenuItem").style.display = "block";
-        // permet d'afficher la zone qui contient la facture
-        document.getElementById("zoneContenuFacture").style.display = "flex";
+        // cacher la zone qui contient les items
+        document.getElementById("zoneContenuItem").style.display = "flex";
+        // afficher la zone qui contient la facture
+        document.getElementById("zoneContenuFacture").style.display = "none";
     }
     
 }
