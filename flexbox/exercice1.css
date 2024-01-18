@@ -56,9 +56,14 @@
     color: white;
     font-weight: bold;
     height: 25%;
+
     /* float: right; */
     /* position: relative; */
     /* top: -120px; */
+}
+
+#panier:hover {
+    cursor: pointer;
 }
 
 .item {
@@ -80,6 +85,10 @@
     font-weight: bold;
     margin-left: 25%;
     margin-top: 10px;
+}
+
+.ajouter:hover {
+    cursor: pointer;
 }
 
 .container {
