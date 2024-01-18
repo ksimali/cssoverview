@@ -36,13 +36,13 @@ function afficherFacture () {
         // cacher les items
         document.getElementById("zoneContenuItem").style.display = "none";
         // afficher la facture
-        document.getElementById("zoneContenuFacture").style.display = "block";
+        document.getElementById("zoneContenuFacture").style.display = "flex";
     }
     else {
         // permet de cacher la zone qui contient les items
         document.getElementById("zoneContenuItem").style.display = "block";
         // permet d'afficher la zone qui contient la facture
-        document.getElementById("zoneContenuFacture").style.display = "none";
+        document.getElementById("zoneContenuFacture").style.display = "flex";
     }
     
 }
