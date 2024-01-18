@@ -1,27 +1,25 @@
 // declaration fonction ajouterItem
 function ajouterItem(produit, quantite, prix) {
 
-    var nouvelleLigne = "<tr>"; // permet de creer une nouvelle ligne dans le tableau dans la zoneContenuFacture
+    var nouvelleLigne = "<tr>"; // permet de creer une nouvelle ligne dans le tableau dans la zone contenant la facture
     nouvelleLigne += "<td>" + produit + "</td>"; // permet de creer une cellule avec le nom du produit
     nouvelleLigne += "<td>" + quantite + "</td>"; // permet de creer une cellule avec la quantite du produit
     nouvelleLigne += "<td>" + prix + "</td>"; // permet de creer une cellule avec le prix du produit
     nouvelleLigne += "</tr>";
 
-    // declaration de la variable ancienContenu et
-    // affectation du contenu HTML du corps du tableau a la variable ancienContenu
+    // affectation des produits à la variable ancienContenu
     var ancienContenu = document.getElementById("corpsTableau").innerHTML;
-    // declaration de la variable nouveauContenu et
-    // affectation de la valeur de la variable ancienContenu, et de la valeur de la variable nouvelleLigne
+
+    // ajouter la nouvelle ligne au ancien contenu et affecter la nouvelle liste de produits a la variable nouveauContenu
     var nouveauContenu = ancienContenu + nouvelleLigne;
-    // affectation de la valeur de la variable nouveauContenu au contenu HTML du corps du tableau
+    // affectation de la liste des produits actualisé au corps de tableau dans la zone de la facture
     document.getElementById("corpsTableau").innerHTML = nouveauContenu;
 
-
+    // incrementation de l'affichage du nombre de produits dans le panier
     var nombreItemPanier = parseInt(document.getElementById("idItem").innerHTML);
     nombreItemPanier += parseInt(quantite);
     document.getElementById("idItem").innerHTML = nombreItemPanier;
 }
-// fin fonction ajouterItem
 
 
 function afficherFacture () {
