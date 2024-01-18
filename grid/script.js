@@ -29,7 +29,9 @@ function afficherFacture(){
     
 
 }
-// 
+// recupérer un element object ayant pour id panier.
 const panier = document.getElementById("panier");
+
 // Ajout d'un event listener qui s'active quand l'utilisateur clique sur l'élement id panier
+// et qui appel la methode afficherFacture.
 panier.addEventListener("click", afficherFacture);
