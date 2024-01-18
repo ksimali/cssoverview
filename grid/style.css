@@ -7,7 +7,24 @@ body{
 #entete{
     background-color: red;
     height: 170px;
-    width: 100%; 
+    width: 100%;
+    display:grid;
+    grid-template-columns:14fr 1fr;
+}
+#entete > h1{
+    font-family: Arial;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+#panier{
+    background-color: blue;
+    font-family: Arial;
+    text-align: center;
+    justify-items: center;
+    font-size: 16px;
+    width: 120px;
+    height: 30px;
 }
 
 /******************************************* Partie Zone Contenu Item ******************************************/
