@@ -9,7 +9,7 @@ body{
     height: 170px;
     width: 100%;
     display:grid;
-    grid-template-columns:14fr 1fr;
+    grid-template-columns:15fr 1fr;
 }
 #entete > h1{
     font-family: Arial;
@@ -34,6 +34,7 @@ body{
 #zoneContenuItem{
     display: grid;
     grid-template-columns:repeat(4, 1fr);
+    gap: 10px;
 }
 .item{
     display: grid;
@@ -49,7 +50,7 @@ body{
     width: 70%;
     height: 30px;
     font-weight: bold;
-    margin-top: 10px;
+    margin: 10px auto 0 auto;
     padding-top: 10px;
 }
 .ajouter:hover{
