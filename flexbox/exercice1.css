@@ -33,6 +33,7 @@
     left: 0px;
     padding-top: 50px;
     display: none;
+    flex-direction: column;
 
 }
 
@@ -94,4 +95,16 @@
 .container {
     display: flex;
     flex-direction: column;
+}
+
+table {
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    tr {
+        display: flex;
+        flex-direction: column; /* pour afficher le tableau verticallement */
+    }
+
 }
