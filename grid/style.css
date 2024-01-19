@@ -10,6 +10,7 @@ body{
     width: 100%;
     display:grid;
     grid-template-columns:15fr 1fr;
+    padding-left: 50px;
 }
 #entete > h1{
     font-family: Arial;
