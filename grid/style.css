@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    font-size: arial;
+    background-color: #dedede;
+}
+/************************************************ Partie Entete ************************************************/
+#entete{
+    background-color: red;
+    height: 170px;
+    width: 100%;
+    display:grid;
+    grid-template-columns:15fr 1fr;
+    padding-left: 50px;
+}
+#entete > h1{
+    font-family: Arial;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+#panier{
+    background-color: blue;
+    font-family: Arial;
+    text-align: center;
+    justify-items: center;
+    font-size: 16px;
+    width: 120px;
+    height: 30px;
+}
+#panier:hover{
+    cursor: pointer;
+}
+
+/******************************************* Partie Zone Contenu Item ******************************************/
+#zoneContenuItem{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 10px;
+}
+.item{
+    display: grid;
+    justify-content: center;
+    font-size: 16px;
+    font-family: Arial;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+.ajouter{
+    background-color: red;
+    width: 70%;
+    height: 30px;
+    font-weight: bold;
+    margin: 10px auto 0 auto;
+    padding-top: 10px;
+}
+.ajouter:hover{
+    cursor: pointer;
+}
+
+/***************************************** Partie Zone Contenu Facture *****************************************/
+#zoneContenuFacture{
+    background-color: #dedede;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px; /*Ajout d'espace en haut de la zoneContenuFacture */
+    display: none; /* cacher la zone contenu Facture au lancement de la page*/
+}
