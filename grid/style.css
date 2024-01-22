@@ -9,33 +9,41 @@ body{
     height: 170px;
     width: 100%;
     display:grid;
-    grid-template-columns:15fr 1fr;
-    padding-left: 50px;
+    grid-template-columns:12fr 1fr;
+    box-sizing: border-box;
 }
 #entete > h1{
     font-family: Arial;
     font-size: 50px;
     text-align: center;
+    align-self: end;
     color: white;
 }
 #panier{
     background-color: blue;
     font-family: Arial;
     text-align: center;
-    justify-items: center;
     font-size: 16px;
     width: 120px;
-    height: 30px;
+    height: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
 }
 #panier:hover{
     cursor: pointer;
+}
+#idItem{
+    color: red;
+    font-size: 18px;
 }
 
 /******************************************* Partie Zone Contenu Item ******************************************/
 #zoneContenuItem{
     display: grid;
     grid-template-columns:repeat(4, 1fr);
-    gap: 10px;
+    gap: 3em;
+    padding: 20px 0 20px 0;
 }
 .item{
     display: grid;
