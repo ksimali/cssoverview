@@ -16,8 +16,14 @@ function ajouterItem(produit, quantite, prix){
 }
 
 function afficherFacture() {
-    document.getElementById("zoneContenuItem").style.display = "none";
-    document.getElementById("zoneContenuFacture").style.display = "block";
+    if(document.getElementById("zoneContenuFacture").style.display == "none"){
+        document.getElementById("zoneContenuItem").style.display = "none";
+        document.getElementById("zoneContenuFacture").style.display = "block";
+
+    }else{
+        document.getElementById("zoneContenuItem").style.display = "block";
+        document.getElementById("zoneContenuFacture").style.display = "none";
+    }
 }
 
 document.addEventListener('click', function (event) {
