@@ -1,5 +1,6 @@
-
-
+body{
+    margin: 0;
+}
 #entete {
     background-color: red;
     width: 100%;
@@ -8,20 +9,18 @@
     left: 0px;
     top: 0px;
     display: flex; 
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between; /* pour placer le titre a gauche et le panier a droite */ 
 }
 
 #zoneContenuItem {
     background-color: #dedede;
     width: 100%;
-    /* height: auto; */
-    /* position: absolute; */
-    top: 170px;
-    left: 0px;
+    height: auto;
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 20px 0 20px 0;
 }
 
 #zoneContenuFacture {
@@ -34,7 +33,6 @@
     padding-top: 50px;
     display: none;
     flex-direction: column;
-
 }
 
 #entete h1 {
@@ -43,11 +41,12 @@
     color: white;
     text-align: center;
     position: relative;
-    top: 50px;
 
 }
 
 #panier {
+    display: flex;
+    align-self: end;
     background-color: blue;
     width: 120px;
     font-family: arial;
@@ -56,15 +55,17 @@
     text-align: center;
     color: white;
     font-weight: bold;
-    height: 25%;
-
-    /* float: right; */
-    /* position: relative; */
-    /* top: -120px; */
+    height: 10%;
 }
 
 #panier:hover {
     cursor: pointer;
+}
+
+#idItem{
+    color: red;
+    font-size: 18px;
+    margin-left:5px;
 }
 
 .item {
@@ -72,7 +73,6 @@
     font-family: arial;
     text-align: center;
     color: white;
-    width: 200px; /* modification de 20% a 200px pour permettre a flew-wrap: wrap de fonctionner */
     margin-left: 4%;
     padding-top: 30px;
     display: inline-block;
